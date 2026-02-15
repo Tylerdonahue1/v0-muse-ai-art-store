@@ -100,6 +100,8 @@ export interface CartItem {
   mat: string
   price: number
   quantity: number
+  type?: "ai-art" | "quote-art"
+  inspireDesign?: InspireDesign
 }
 
 export interface Cart {
@@ -118,6 +120,58 @@ export interface GalleryItem {
   subject: SubjectOption
   palette: PaletteOption
   prompt: string
+}
+
+// ── Inspire / Motivational Quote Art ──
+export type InspireCategory =
+  | "stoic"
+  | "poetry"
+  | "entrepreneurship"
+  | "mindfulness"
+  | "leadership"
+  | "love"
+
+export interface InspireQuote {
+  id: string
+  text: string
+  author: string
+  authorTitle?: string
+  category: InspireCategory
+  tags: string[]
+}
+
+export type InspireTypography =
+  | "classic-serif"
+  | "bold-statement"
+  | "minimal-modern"
+  | "handwritten"
+  | "editorial"
+  | "poetic"
+
+export type InspireBackground =
+  | "solid"
+  | "gradient"
+  | "textured"
+  | "photographic"
+  | "dark"
+
+export type InspirePalette =
+  | "warm-neutrals"
+  | "midnight"
+  | "ocean"
+  | "earth"
+  | "blush"
+  | "monochrome"
+
+export interface InspireDesign {
+  id: string
+  quote: InspireQuote
+  typography: InspireTypography
+  background: InspireBackground
+  palette: InspirePalette
+  showAuthor: boolean
+  alignment: "left" | "center" | "right"
+  quoteSize: "compact" | "standard" | "oversized"
 }
 
 // ── Starting Concepts ──
