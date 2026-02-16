@@ -6,7 +6,6 @@ import { motion, AnimatePresence } from "framer-motion"
 import { Eye, Home, ZoomIn } from "lucide-react"
 import { FRAMES } from "@/lib/mock-data"
 import { cn } from "@/lib/utils"
-import type { RoomOption } from "@/lib/types"
 
 const ROOM_IMAGES: Record<string, string> = {
   "living-room": "/images/rooms/living-room.jpg",

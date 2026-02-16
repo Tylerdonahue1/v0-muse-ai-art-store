@@ -35,6 +35,14 @@
     --chart-4: 40 30% 72%;
     --chart-5: 15 50% 55%;
     --radius: 0.5rem;
+    --sidebar-background: 40 25% 95%;
+    --sidebar-foreground: 30 10% 20%;
+    --sidebar-primary: 30 10% 12%;
+    --sidebar-primary-foreground: 40 30% 97%;
+    --sidebar-accent: 35 15% 90%;
+    --sidebar-accent-foreground: 30 10% 12%;
+    --sidebar-border: 35 15% 87%;
+    --sidebar-ring: 25 60% 52%;
   }
 }
 
